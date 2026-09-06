@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regras do Hospital · Nova Paulista SP</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAllBMVEUGBwkMDQ4TExUoKSofIiMDAwUYGx0AAQIHCAn///8vMDE4OTrV1dbv7/Dg4OHp6er19fX7+vttbm8cLCza29tXWltsCA2foKHl5eXHx8hfZWbOz9C+v8BNT1A2FRdCRUa2uLiKjI0jBQc+BwqSlJXJDBVUCQ2RDxWsra52d3iFhYZ9fn/fEBuuDhWBgYJlJypeFhl4hIXt28ZPAAAEXUlEQVRYw+1W23KjOBBFFyS17mAIYMBgm4mxvXGS//+5bTmTnanaqmTndcunbMsS6tO6nO4myx544IH/PdRv+EMzbPIE+RP3zifldwRpeqYIpVQI/hNCCEoJUYky/8Z/zrVmxmjGzIctwx8cYtrgF0G/Y5i4NjQz2zrf3i775cz3Sy1pWU5qnDQT2kj15QIEv7aulAPMIzjAz7mDLh8B9iQ4315z87V/ycTqQq/moimLtp5sUV6KQM9F1CaGEDtivtyDklr0hYN6gKYER6WFEr2bBnx+BTcXjjH+5R4yzSJE6CtYSgicWjiLCLceGtyVnQBqqr8iyCmbIC4+eHc9O0tk566yC30Va+LdynxcvjgEFEkuxDZ401SdP199v993/iKXqu+tML6vqt4OypD833JKI6iSXGpy9RU3zkNZ3m+hqOUWQtHJfeHnwdoKZYHzkth+Z8GRjAi+2ZhsgJbnzdDwbFuWdW0IEWV5G/Ol7wQ5A5SZ2Ww4RVlK+YuA8o3W5vX1dDrUI8OHJM8YY1IbTQiRKEciCc1kVl/r4+n0+oqS3HBB/rl8w3bPT09Pz887M21rWXfVOe+j5z2KSJG8iYFd7bA2e4OK3h3T3LcdqvtTflodDrup3BvSB1dYWcZY4gX0onMzEsjFtZN1Ae93aYqqn5eJmd3hkGNg3COXaNYMVQjFypz3rVdlUWxRQ5WwMEgk2EMcu8Jemv5yhTYEWMfYz43mLGlCSS5KaFvr4w3FE4pC4FnV0kNF/QfBBWDswApMDcJ0ReibKbYBGmXyOwGjTfSmLqBeoVtRuVeAKW+hF+0HARKOOF5Uay3lAoUhNTgXLUVN3I9A9DCjGzc6wEVAfYFoqHedqOKcCPBMajYEQGzzNEGWEOcCMGWkPRCtI8wXDx0Oj6Vz573zXFV+FrZdpVJyG0IppeLnNjZyjMVNXiFu0RtJgYEpoIbgILqxCdZ62y6Lr+ptVSFBZee5u41tW45LOY2VX6Wu2kbuXStm6FS6SDyCPRquVy0q61Hufl2djxjUe1EUBS57wIi+nXHXwVZDRns/SHRRNq1nDLOD1HSurMETLlt/49qBxz/dvL4TzGRbxMjfm3q0NsQCuiyfgyWNt6Hq2y1lMlOMIzHmYQyDyCXdv9cKszA5HN/ekuSS6o7HHWbpzbQ961w2eE+zs0NV+UZpiXEwBddImvH1fcJ0fjg+nV5+/JXw4xMfvZfT0/FAMl4v04wi0UOwVGOf3vB2JEHNH55PL4gTRsXxcK8MP0ET73Mi/vHy8nTMMzrVKsljEiLDM8QgIBhNpxMa7kQK682Gsc+acm8ZS4PYvc/7WIo49xfCMk1yeXh+TqbJknGRilD2Wdk+mnttI4QKnoj4bveGqzzITBCdcU53uzSOpvfqda+D6t+4F0x8qujdE7LsDopzDEamk232majUd6U3LSexYMpJOkCnKqW07L9X8U8WQvN7QlDZn70B/EriuXq8Rj3wwAO/8DfV42CZMFQPAQAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#08090b; --bg-elev:#0d0f13; --surface:#131519; --surface-2:#191c22; --surface-3:#20242c;
+  --border:#24272f; --border-strong:#343945;
+  --text:#e9ebf0; --text-dim:#9aa0ac; --text-faint:#636975;
+  --chrome-1:#ffffff; --chrome-2:#c9cdd6;
+  --red:#e8202f; --red-2:#ff4a54; --red-dark:#7d0e18;
+  --red-bg:rgba(232,32,47,.10); --red-border:rgba(232,32,47,.4);
+  --amber:#e8a23c; --amber-bg:rgba(232,162,60,.10); --amber-border:rgba(232,162,60,.4);
+  --info:#5b9bd8; --info-bg:rgba(91,155,216,.10); --info-border:rgba(91,155,216,.4);
+  --sidebar-w:284px; --topbar-h:78px; --content-max:760px; --radius:5px;
+}
+*{box-sizing:border-box;}
+@media (prefers-reduced-motion:no-preference){ html{scroll-behavior:smooth;} }
+html{background:var(--bg);}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,sans-serif;
+  font-size:16.5px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+h1,h2,h3,.brand-sub,.nav-section-label,.hero-title,th,.tag,.btn,.ql-title{font-family:'Oswald',Impact,'Arial Narrow',sans-serif;}
+a{color:inherit;} .mono{font-family:'JetBrains Mono',monospace;}
+::selection{background:var(--red);color:#fff;}
+
+/* subtle global texture: faint diagonal hazard stripes fixed behind everything, very low opacity */
+.texture{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.035;
+  background-image:repeating-linear-gradient(-45deg,#fff 0 2px,transparent 2px 26px);
+  -webkit-mask-image:linear-gradient(180deg,#000 0,#000 420px,transparent 720px);
+          mask-image:linear-gradient(180deg,#000 0,#000 420px,transparent 720px);}
+
+/* ---------- reading progress ---------- */
+.progress-bar{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--red),var(--red-2));
+  width:0%;z-index:60;transition:width .1s linear;}
+
+/* ---------- topbar ---------- */
+.topbar{position:fixed;top:0;left:0;right:0;height:var(--topbar-h);display:flex;align-items:center;
+  gap:16px;background:linear-gradient(180deg,#0e1014,#0a0b0e);border-bottom:1px solid var(--border);
+  padding:0 20px;z-index:40;}
+.topbar::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;
+  background:linear-gradient(90deg,transparent,var(--red) 20%,var(--red) 80%,transparent);}
+.menu-btn{display:none;background:var(--surface-2);border:1px solid var(--border-strong);border-radius:var(--radius);
+  color:var(--text);width:38px;height:38px;cursor:pointer;align-items:center;justify-content:center;flex:0 0 auto;}
+.menu-btn:hover{border-color:var(--red-border);color:var(--red);}
+.menu-btn svg{width:19px;height:19px;}
+.brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:var(--text);flex:0 0 auto;}
+.brand img.logo-mark{height:50px;width:auto;display:block;
+  filter:drop-shadow(0 3px 8px rgba(0,0,0,.55));}
+.brand-tag{display:flex;flex-direction:column;line-height:1.15;border-left:1px solid var(--border-strong);
+  padding-left:13px;white-space:nowrap;}
+.brand-tag .kicker{font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.14em;
+  color:var(--red);text-transform:uppercase;font-weight:500;}
+.brand-tag .sub{font-family:'Oswald',sans-serif;font-size:.86rem;color:var(--text-dim);
+  letter-spacing:.02em;font-weight:500;}
+.search-wrap{margin-left:auto;position:relative;width:min(230px,32vw);flex:0 1 auto;}
+.search-wrap input{width:100%;background:var(--surface-2);border:1px solid var(--border-strong);
+  border-radius:var(--radius);color:var(--text);padding:9px 12px 9px 34px;font-family:'Inter',sans-serif;
+  font-size:.88rem;transition:border-color .15s,box-shadow .15s;}
+.search-wrap input::placeholder{color:var(--text-faint);}
+.search-wrap input:focus{outline:none;border-color:var(--red);box-shadow:0 0 0 3px var(--red-bg);}
+.search-wrap svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--text-faint);}
+.topbar-cta{flex:0 0 auto;}
+.btn{display:inline-flex;align-items:center;gap:7px;font-weight:600;text-decoration:none;
+  letter-spacing:.03em;text-transform:uppercase;font-size:.82rem;border-radius:3px;white-space:nowrap;
+  transition:transform .15s,box-shadow .15s,filter .15s;}
+.btn-primary{background:linear-gradient(180deg,var(--red-2),var(--red));color:#fff;padding:10px 20px 10px 18px;
+  clip-path:polygon(9px 0,100% 0,calc(100% - 9px) 100%,0 100%);
+  box-shadow:0 3px 14px rgba(232,32,47,.32);}
+.btn-primary:hover{filter:brightness(1.1);transform:translateY(-1px);}
+.btn-outline{background:transparent;color:var(--text);border:1.5px solid var(--border-strong);padding:9.5px 19px;
+  clip-path:polygon(9px 0,100% 0,calc(100% - 9px) 100%,0 100%);}
+.btn-outline:hover{border-color:var(--red);color:var(--red-2);}
+
+/* ---------- layout ---------- */
+.layout{display:flex;margin-top:var(--topbar-h);min-height:calc(100vh - var(--topbar-h));}
+.sidebar{width:var(--sidebar-w);flex:0 0 auto;position:fixed;top:var(--topbar-h);bottom:0;left:0;
+  background:var(--bg-elev);border-right:1px solid var(--border);overflow-y:auto;padding:24px 15px 40px;}
+.sidebar::-webkit-scrollbar{width:8px;} .sidebar::-webkit-scrollbar-thumb{background:var(--surface-3);border-radius:4px;}
+.sidebar-section{margin-bottom:22px;}
+.nav-section-label{display:flex;align-items:center;gap:8px;font-size:.72rem;font-weight:600;color:var(--text-faint);
+  text-transform:uppercase;letter-spacing:.1em;padding:0 10px;margin:0 0 8px;}
+.nav-section-label svg{color:var(--red);opacity:.85;flex:0 0 auto;}
+.sidebar ul{list-style:none;margin:0;padding:0;}
+.sidebar li{margin-bottom:2px;}
+.sidebar li a{display:flex;align-items:center;gap:11px;padding:8px 10px;border-radius:var(--radius);
+  color:var(--text-dim);text-decoration:none;font-size:.94rem;font-family:'Inter',sans-serif;
+  border-left:3px solid transparent;transition:background .12s,color .12s,border-color .12s;}
+.sidebar li a svg{flex:0 0 auto;color:var(--text-faint);transition:color .12s;}
+.sidebar li a:hover{background:var(--surface-2);color:var(--text);}
+.sidebar li a:hover svg{color:var(--red-2);}
+.sidebar li a.active{background:linear-gradient(90deg,var(--red-bg),transparent);color:#fff;
+  border-left-color:var(--red);font-weight:600;}
+.sidebar li a.active svg{color:var(--red);}
+.sidebar-root-link{margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid var(--border);}
+
+.content{margin-left:var(--sidebar-w);flex:1;min-width:0;padding:52px 36px 100px;display:flex;justify-content:flex-start;}
+.content-inner{max-width:var(--content-max);width:100%;}
+
+/* ---------- breadcrumb ---------- */
+.breadcrumb{display:flex;flex-wrap:wrap;align-items:center;gap:7px;font-family:'JetBrains Mono',monospace;
+  font-size:.74rem;color:var(--text-faint);margin-bottom:22px;text-transform:uppercase;letter-spacing:.02em;}
+.breadcrumb a{color:var(--text-dim)!important;text-decoration:none!important;}
+.breadcrumb a:hover{color:var(--red-2)!important;}
+.breadcrumb .sep{color:var(--border-strong);}
+.breadcrumb .current{color:var(--text-dim);}
+
+/* ---------- doc head ---------- */
+.doc-head{border-bottom:1px solid var(--border);padding-bottom:24px;margin-bottom:36px;}
+.doc-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px;}
+.tag{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.03em;padding:4px 10px 4px 8px;
+  border-radius:2px;border:1px solid var(--border-strong);color:var(--text-faint);background:var(--surface-2);
+  clip-path:polygon(6px 0,100% 0,calc(100% - 6px) 100%,0 100%);}
+.tag.ref{color:var(--red-2);border-color:var(--red-border);background:var(--red-bg);}
+h1.page-title{font-size:2.5rem;font-weight:700;margin:0 0 14px;line-height:1.08;text-transform:uppercase;
+  letter-spacing:.005em;color:#fff;position:relative;padding-bottom:16px;}
+h1.page-title::after{content:"";position:absolute;left:0;bottom:0;width:60px;height:4px;border-radius:2px;
+  background:linear-gradient(90deg,var(--red),var(--red-dark));}
+.doc-updated{color:var(--text-faint);font-size:.84rem;margin:0;display:flex;align-items:center;gap:6px;}
+.doc-updated svg{color:var(--text-faint);}
+
+/* ---------- body copy ---------- */
+.content-inner h2{font-size:1.5rem;font-weight:600;margin:2.2em 0 .7em;text-transform:uppercase;
+  letter-spacing:.01em;color:#fff;border-left:3px solid var(--red);padding-left:13px;
+  display:flex;align-items:center;gap:9px;scroll-margin-top:96px;}
+.content-inner h3{font-size:1.14rem;font-weight:600;margin:1.7em 0 .5em;color:var(--chrome-1);
+  scroll-margin-top:96px;}
+.content-inner h2 .heading-anchor,.content-inner h3 .heading-anchor{opacity:0;text-decoration:none;
+  color:var(--text-faint);font-size:.8em;transition:opacity .12s;margin-left:2px;}
+.content-inner h2:hover .heading-anchor,.content-inner h3:hover .heading-anchor{opacity:1;}
+.content-inner p{margin:0 0 1.05em;color:var(--text);}
+.content-inner ul,.content-inner ol{margin:0 0 1.2em;padding-left:1.35em;}
+.content-inner li{margin-bottom:.45em;}
+.content-inner li::marker{color:var(--red-2);}
+.content-inner strong{color:#fff;font-weight:600;}
+.content-inner a:not(.quicklink):not(.btn){color:var(--red-2);text-decoration:underline;
+  text-decoration-color:var(--red-border);text-underline-offset:2px;}
+.content-inner a:not(.quicklink):not(.btn):hover{color:var(--chrome-1);}
+
+/* ---------- callouts ---------- */
+.callout{border:1px solid var(--border);border-radius:var(--radius);padding:15px 18px 15px 50px;
+  margin:1.6em 0;font-size:.95rem;background:var(--surface);position:relative;}
+.callout-icon{position:absolute;left:15px;top:15px;width:22px;height:22px;}
+.callout-label{font-weight:700;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;
+  display:block;margin-bottom:5px;font-family:'Oswald',sans-serif;}
+.callout--proibido{border-color:var(--red-border);background:var(--red-bg);}
+.callout--proibido .callout-label{color:var(--red-2);}
+.callout--proibido .callout-icon{color:var(--red-2);}
+.callout--atencao{border-color:var(--amber-border);background:var(--amber-bg);}
+.callout--atencao .callout-label{color:var(--amber);}
+.callout--atencao .callout-icon{color:var(--amber);}
+.callout--info{border-color:var(--info-border);background:var(--info-bg);}
+.callout--info .callout-label{color:var(--info);}
+.callout--info .callout-icon{color:var(--info);}
+
+/* ---------- tables ---------- */
+table{width:100%;border-collapse:collapse;margin:1.6em 0;font-size:.89rem;
+  border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;}
+caption{text-align:left;font-size:.82rem;color:var(--text-faint);margin-bottom:8px;caption-side:top;
+  text-transform:uppercase;letter-spacing:.06em;font-family:'JetBrains Mono',monospace;}
+th,td{border:1px solid var(--border);padding:11px 13px;text-align:left;vertical-align:top;}
+th{background:var(--surface-3);font-weight:600;letter-spacing:.03em;text-transform:uppercase;
+  font-size:.82rem;color:#fff;border-bottom:2px solid var(--red-dark);}
+tr:nth-child(even) td{background:rgba(255,255,255,.014);}
+tbody tr:hover td{background:rgba(232,32,47,.045);}
+
+/* ---------- quicklinks ---------- */
+.quicklinks{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:1.8em 0;}
+.quicklink{display:block;border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;
+  text-decoration:none!important;color:var(--text);background:var(--surface);position:relative;
+  transition:border-color .15s,background .15s,transform .15s;overflow:hidden;}
+.quicklink::before{content:"";position:absolute;top:0;right:0;width:0;height:0;
+  border-style:solid;border-width:0 26px 26px 0;border-color:transparent var(--surface-2) transparent transparent;
+  transition:border-color .15s;}
+.quicklink:hover{border-color:var(--red-border);background:var(--surface-2);transform:translateY(-2px);}
+.quicklink:hover::before{border-color:transparent var(--red-dark) transparent transparent;}
+.quicklink .ql-title{font-family:'Oswald',sans-serif;font-weight:600;font-size:1.04rem;display:block;
+  margin-bottom:4px;text-transform:uppercase;letter-spacing:.01em;color:#fff;}
+.quicklink .ql-desc{color:var(--text-dim);font-size:.87rem;line-height:1.5;}
+
+/* ---------- hero (index) ---------- */
+.hero{padding:26px 0 40px;border-bottom:1px solid var(--border);margin-bottom:40px;position:relative;}
+.hero-glow{position:absolute;top:-40px;left:-60px;width:420px;height:420px;pointer-events:none;
+  background:radial-gradient(circle,rgba(232,32,47,.16),transparent 68%);z-index:0;}
+.hero-kicker{font-family:'JetBrains Mono',monospace;font-size:.76rem;letter-spacing:.16em;
+  color:var(--red-2);text-transform:uppercase;margin:0 0 18px;position:relative;z-index:1;}
+.hero-logo-wrap{position:relative;z-index:1;margin-bottom:22px;}
+.hero-logo-wrap img{max-width:min(480px,92vw);width:100%;height:auto;display:block;
+  filter:drop-shadow(0 8px 22px rgba(0,0,0,.5));}
+.hero-sub{color:var(--text-dim);font-size:1.12rem;max-width:60ch;margin:0 0 26px;position:relative;z-index:1;}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;position:relative;z-index:1;}
+
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;
+  background:var(--border);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;
+  margin:2em 0;}
+.stat-box{background:var(--surface);padding:16px 18px;}
+.stat-box .stat-num{font-family:'Oswald',sans-serif;font-size:1.5rem;font-weight:700;color:#fff;display:block;}
+.stat-box .stat-label{font-size:.78rem;color:var(--text-faint);text-transform:uppercase;letter-spacing:.05em;}
+
+/* ---------- footer ---------- */
+footer.page-footer{border-top:1px solid var(--border);margin-top:60px;padding-top:24px;
+  color:var(--text-faint);font-size:.82rem;display:flex;align-items:center;gap:14px;line-height:1.6;}
+footer.page-footer img{height:34px;width:auto;flex:0 0 auto;opacity:.9;}
+
+/* ---------- back to top ---------- */
+.back-to-top{position:fixed;right:24px;bottom:24px;width:44px;height:44px;background:var(--surface-2);
+  border:1px solid var(--border-strong);color:var(--text-dim);display:flex;align-items:center;justify-content:center;
+  border-radius:var(--radius);cursor:pointer;opacity:0;pointer-events:none;transform:translateY(8px);
+  transition:opacity .2s,transform .2s,border-color .15s,color .15s;z-index:38;}
+.back-to-top.show{opacity:1;pointer-events:auto;transform:translateY(0);}
+.back-to-top:hover{border-color:var(--red);color:var(--red-2);}
+
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:35;backdrop-filter:blur(1px);}
+.overlay.show{display:block;}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--red);outline-offset:2px;}
+
+@media (max-width:880px){
+  :root{--topbar-h:64px;}
+  .menu-btn{display:inline-flex;}
+  .brand img.logo-mark{height:38px;}
+  .brand-tag{display:none;}
+  .search-wrap{width:min(150px,30vw);}
+  .topbar-cta{display:none;}
+  .sidebar{transform:translateX(-100%);transition:transform .22s ease;z-index:45;box-shadow:2px 0 18px rgba(0,0,0,.5);}
+  .sidebar.open{transform:translateX(0);}
+  .content{margin-left:0;padding:34px 20px 80px;}
+  .hero-logo-wrap img{max-width:100%;}
+  h1.page-title{font-size:1.9rem;}
+  .back-to-top{right:16px;bottom:16px;}
+}
+@media (prefers-reduced-motion:reduce){ .sidebar{transition:none;} }
+</style>
+</head>
+<body>
+<div class="progress-bar" id="progress-bar"></div>
+<div class="texture"></div>
+<div class="topbar">
+  <button class="menu-btn" aria-label="Abrir menu"><svg width="19" height="19" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6 H17 M3 10 H17 M3 14 H17" /></svg></button>
+  <a class="brand" href="index.html">
+    <img class="logo-mark" src="assets/nova-paulista-logo.png" alt="Nova Paulista SP">
+    <span class="brand-tag"><span class="kicker">SP · FiveM Roleplay</span><span class="sub">Central de Regras</span></span>
+  </a>
+  <div class="search-wrap"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="9" r="6"/><path d="M13.5 13.5 L18 18" /></svg><input id="nav-search" type="search" placeholder="Buscar nas regras..." aria-label="Buscar nas regras"></div>
+  <div class="topbar-cta"><a class="btn btn-primary" href="regras-gerais.html"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2.5 H12 L15 5.5 V17 A0.8 0.8 0 0 1 14.2 17.8 H6 A0.8 0.8 0 0 1 5.2 17 V3.3 A0.8 0.8 0 0 1 6 2.5 Z" /><path d="M12 2.5 V5.5 H15" /><path d="M7.5 10.5 H12.7" /><path d="M7.5 13.3 H12.7" /></svg>Regras Gerais</a></div>
+</div>
+<div class="overlay"></div>
+<div class="layout">
+  <nav class="sidebar"><div class="sidebar-section sidebar-root-link"><ul><li><a href="index.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9.5 L10 3.5 L17 9.5" /><path d="M5 8.5 V16.5 H8.5 V12 H11.5 V16.5 H15 V8.5" /></svg><span>Início</span></a></li></ul></div>
+<div class="sidebar-section"><p class="nav-section-label"><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2.5 H12 L15 5.5 V17 A0.8 0.8 0 0 1 14.2 17.8 H6 A0.8 0.8 0 0 1 5.2 17 V3.3 A0.8 0.8 0 0 1 6 2.5 Z" /><path d="M12 2.5 V5.5 H15" /><path d="M7.5 10.5 H12.7" /><path d="M7.5 13.3 H12.7" /></svg>Regras</p><ul><li><a href="regras-gerais.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2.5 H12 L15 5.5 V17 A0.8 0.8 0 0 1 14.2 17.8 H6 A0.8 0.8 0 0 1 5.2 17 V3.3 A0.8 0.8 0 0 1 6 2.5 Z" /><path d="M12 2.5 V5.5 H15" /><path d="M7.5 10.5 H12.7" /><path d="M7.5 13.3 H12.7" /></svg><span>Regras Gerais</span></a></li><li><a href="regras-de-ouro.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.3 L12.2 7.4 L17.7 8 L13.6 11.7 L14.8 17.2 L10 14.3 L5.2 17.2 L6.4 11.7 L2.3 8 L7.8 7.4 Z" /></svg><span>Regras de Ouro</span></a></li><li><a href="regras-discord.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.3 4.5 H16.7 V13.2 H8.6 L4.8 16.7 V13.2 H3.3 Z" /></svg><span>Regras do Discord</span></a></li><li><a href="punicoes-strikes.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 L18 17.3 H2 Z" /><path d="M10 8.3 V12" /><circle cx="10" cy="14.6" r="0.15" fill="currentColor" stroke="none"/></svg><span>Punições & Strikes</span></a></li><li><a href="restaurantes.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.2 2.3 V8 M4.2 2.3 V5.8 A1 1 0 0 0 6.2 5.8 V2.3 M14.8 2.3 C13 2.3 12 4.2 12 6 C12 7.6 12.8 8.6 13.6 8.8 V17.7 M5.2 8 V17.7" /></svg><span>Restaurantes</span></a></li><li><a href="regras-especiais.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.3 L11.3 8.7 L17.7 10 L11.3 11.3 L10 17.7 L8.7 11.3 L2.3 10 L8.7 8.7 Z" /></svg><span>Regras Especiais</span></a></li></ul></div>
+<div class="sidebar-section"><p class="nav-section-label"><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 3.3 H15.5 A1.7 1.7 0 0 1 17.2 5 V9.5 A7.2 7.2 0 0 1 2.8 9.5 V5 A1.7 1.7 0 0 1 4.5 3.3 Z" /><ellipse cx="7.4" cy="9.3" rx="1" ry="1.3"/><ellipse cx="12.6" cy="9.3" rx="1" ry="1.3"/><path d="M7 13.2 C8.3 14.6 11.7 14.6 13 13.2" /></svg>Regras de Roleplay</p><ul><li><a href="regras-policia.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.3 L17 5 V9.8 C17 14.3 14 17.4 10 18.8 C6 17.4 3 14.3 3 9.8 V5 Z" /></svg><span>Regras da Polícia</span></a></li><li><a href="regras-hospital.html" class="active"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.7" /><path d="M10 6.3 V13.7 M6.3 10 H13.7" /></svg><span>Regras do Hospital</span></a></li><li><a href="regras-ilegal.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7.2" /><circle cx="10" cy="10" r="3" /><path d="M10 1 V4 M10 16 V19 M1 10 H4 M16 10 H19" /></svg><span>Regras do Ilegal</span></a></li><li><a href="regras-de-acoes.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.3 2 V18" /><path d="M4.3 3.3 H15.5 L13.2 6.6 L15.5 9.9 H4.3" /></svg><span>Regras de Ações</span></a></li></ul></div>
+<div class="sidebar-section"><p class="nav-section-label"><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 18.3 C10 18.3 16 12.4 16 8.2 A6 6 0 0 0 4 8.2 C4 12.4 10 18.3 10 18.3 Z" /><circle cx="10" cy="8.2" r="2.1" /></svg>Ações & Perímetros</p><ul><li><a href="acoes-comuns.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.3 L18 6.5 L10 10.7 L2 6.5 Z" /><path d="M2 10.3 L10 14.5 L18 10.3" /><path d="M2 14.1 L10 18.3 L18 14.1" /></svg><span>Ações Comuns</span></a></li><li><a href="acoes-pequeno-porte.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.3 L18 6.3 V14.3 L10 18.3 L2 14.3 V6.3 Z" /><path d="M2 6.3 L10 10.3 L18 6.3" /><path d="M10 10.3 V18.3" /></svg><span>Pequeno Porte</span></a></li><li><a href="acoes-medio-porte.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.3 L18 6.3 V14.3 L10 18.3 L2 14.3 V6.3 Z" /><path d="M2 6.3 L10 10.3 L18 6.3" /><path d="M10 10.3 V18.3" /></svg><span>Médio Porte</span></a></li><li><a href="acoes-grande-porte.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.3 L18 6.3 V14.3 L10 18.3 L2 14.3 V6.3 Z" /><path d="M2 6.3 L10 10.3 L18 6.3" /><path d="M10 10.3 V18.3" /></svg><span>Grande Porte</span></a></li></ul></div>
+<div class="sidebar-section"><p class="nav-section-label"><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.5 V17.5" /><path d="M4.5 5.3 H15.5" /><path d="M10 5.3 L6.2 5.3 L3.8 10.4 A2.7 2.7 0 0 0 9.3 10.4 Z" /><path d="M10 5.3 L13.8 5.3 L16.2 10.4 A2.7 2.7 0 0 1 10.7 10.4 Z" /><path d="M6.5 17.5 H13.5" /></svg>Administração</p><ul><li><a href="administracao.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.2 3 L17 6.8 L14.5 9.3 L10.7 5.5 Z" /><path d="M10.7 5.5 L3.5 12.7" /><path d="M2.6 13.6 L5.4 16.4" /><path d="M1.7 17.3 H8" /></svg><span>Administração aos Jogadores</span></a></li></ul></div>
+<div class="sidebar-section"><p class="nav-section-label"><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.7 8.5 H16.3 V17.5 H3.7 Z" /><path d="M2.3 8.5 H17.7 V11.3 H2.3 Z" /><path d="M10 8.5 V17.5" /><path d="M10 8.5 C8.5 5 4.5 4.5 4.5 7 C4.5 8.7 7.5 8.5 10 8.5" /><path d="M10 8.5 C11.5 5 15.5 4.5 15.5 7 C15.5 8.7 12.5 8.5 10 8.5" /></svg>Benefícios</p><ul><li><a href="doacoes.html"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 17.2 C4.3 12.6 2.3 9.6 2.3 6.9 A3.7 3.7 0 0 1 10 5.4 A3.7 3.7 0 0 1 17.7 6.9 C17.7 9.6 15.7 12.6 10 17.2 Z" /></svg><span>Doações</span></a></li></ul></div></nav>
+  <main class="content"><div class="content-inner">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Início</a><span class="sep">/</span><span class="current">Regras de Roleplay</span><span class="sep">/</span><span class="current">Regras do Hospital</span></nav>
+<div class="doc-head"><div class="doc-meta"><span class="tag ref">NPSP-008</span><span class="tag">REGRAS DE ROLEPLAY</span></div><h1 class="page-title">Regras do Hospital</h1><p class="doc-updated">Atualizado em setembro de 2026</p></div>
+<p>A equipe médica mantém a cidade funcionando depois de cada confronto. O atendimento deve ser roleplayado, não apenas um clique em "reviver".</p>
+
+<h2>Atendimento e revive</h2>
+<p>Ao chegar inconsciente, o paciente deve receber uma cena mínima de atendimento antes de voltar a andar — verificação de sinais, procedimento breve, alta. Pular direto para "já está bom" tira o sentido do papel médico.</p>
+
+<h2>Tempo de graça pós-revive</h2>
+<p>Nos primeiros minutos após ser reanimado, o personagem está fisicamente debilitado e não pode partir imediatamente para outro confronto armado — é o tempo de sair da cena, não de revidar.</p>
+
+<h2>Memória após o revive (NLR)</h2>
+<p>Assim como descrito em <a href="regras-gerais.html">Regras Gerais</a>, o paciente não lembra detalhes de quem o feriu ou de onde exatamente aconteceu o confronto. O hospital não é o lugar para "descobrir" essa informação por atalho.</p>
+
+<div class="callout callout--proibido"><span class="callout-label">Proibido</span>Fingir ferimento grave para escapar de uma prisão ou negociação em andamento ("fake down") é proibido e tratado como Fail RP.</div>
+  <footer class="page-footer"><img src="assets/nova-paulista-logo.png" alt=""><span>NOVA PAULISTA SP — documento interno da comunidade, sujeito a alterações sem aviso prévio. Em caso de dúvida sobre qualquer regra, abra um ticket antes de agir.</span></footer>
+  </div></main>
+</div>
+<script>
+(function(){
+  function each(list, fn){ Array.prototype.forEach.call(list, fn); }
+
+  var btn = document.querySelector('.menu-btn');
+  var sidebar = document.querySelector('.sidebar');
+  var overlay = document.querySelector('.overlay');
+  function closeSidebar(){ sidebar.classList.remove('open'); overlay.classList.remove('show'); }
+  function openSidebar(){ sidebar.classList.add('open'); overlay.classList.add('show'); }
+  if(btn){ btn.addEventListener('click', function(){
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  }); }
+  if(overlay){ overlay.addEventListener('click', closeSidebar); }
+  each(document.querySelectorAll('.sidebar a'), function(a){
+    a.addEventListener('click', function(){ if(window.innerWidth<=880){ closeSidebar(); } });
+  });
+  var search = document.getElementById('nav-search');
+  if(search){
+    search.addEventListener('input', function(){
+      var q = search.value.trim().toLowerCase();
+      each(document.querySelectorAll('.sidebar-section'), function(section){
+        var any = false;
+        each(section.querySelectorAll('li'), function(li){
+          var match = li.textContent.toLowerCase().indexOf(q) !== -1;
+          li.style.display = match ? '' : 'none';
+          if(match) any = true;
+        });
+        section.style.display = (q === '' || any) ? '' : 'none';
+      });
+    });
+  }
+
+  /* reading progress bar */
+  var bar = document.getElementById('progress-bar');
+  function updateProgress(){
+    var h = document.documentElement;
+    var scrolled = h.scrollTop;
+    var max = h.scrollHeight - h.clientHeight;
+    var pct = max > 0 ? (scrolled/max)*100 : 0;
+    if(bar) bar.style.width = pct + '%';
+  }
+  document.addEventListener('scroll', updateProgress, {passive:true});
+  updateProgress();
+
+  /* back to top */
+  var toTop = document.createElement('button');
+  toTop.className = 'back-to-top';
+  toTop.setAttribute('aria-label','Voltar ao topo');
+  toTop.innerHTML = '<svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 16 V4"/><path d="M4.5 9.5 L10 4 L15.5 9.5"/></svg>';
+  document.body.appendChild(toTop);
+  toTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+  document.addEventListener('scroll', function(){
+    if(window.scrollY > 480){ toTop.classList.add('show'); } else { toTop.classList.remove('show'); }
+  }, {passive:true});
+
+  /* heading anchors */
+  var used = {};
+  each(document.querySelectorAll('.content-inner h2, .content-inner h3'), function(h){
+    var base = h.textContent.trim().toLowerCase()
+      .replace(/[^a-z0-9áàâãéêíóôõúüç\s-]/gi,'')
+      .replace(/\s+/g,'-');
+    var slug = base || 'sec';
+    if(used[slug]){ used[slug]++; slug = slug + '-' + used[slug]; } else { used[slug] = 1; }
+    h.id = slug;
+    var a = document.createElement('a');
+    a.href = '#' + slug;
+    a.className = 'heading-anchor';
+    a.setAttribute('aria-label','Link para esta seção');
+    a.textContent = '#';
+    h.appendChild(document.createTextNode(' '));
+    h.appendChild(a);
+  });
+
+  /* callout icons */
+  var calloutIcons = {
+    proibido: '<svg class="callout-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7.5"/><path d="M5 5 L15 15"/></svg>',
+    atencao: '<svg class="callout-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3 L18 17.3 H2 Z"/><path d="M10 8.3 V12"/><circle cx="10" cy="14.6" r="0.15" fill="currentColor" stroke="none"/></svg>',
+    info: '<svg class="callout-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7.5"/><path d="M10 9 V14.2"/><circle cx="10" cy="6.3" r="0.2" fill="currentColor" stroke="none"/></svg>'
+  };
+  each(document.querySelectorAll('.callout'), function(c){
+    var type = c.className.match(/callout--(\w+)/);
+    if(type && calloutIcons[type[1]]){
+      c.insertAdjacentHTML('afterbegin', calloutIcons[type[1]]);
+    }
+  });
+})();
+</script>
+</body>
+</html>
