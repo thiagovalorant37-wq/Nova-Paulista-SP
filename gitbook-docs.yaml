@@ -10,3 +10,4 @@ site:
       draft: true
       content:
         directory: null
+        language: pt-br
