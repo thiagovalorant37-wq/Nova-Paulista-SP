@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nova-paulista-sp.onrender.com/sitemap.xml

@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: nova-paulista-sp
+    runtime: static
+    buildCommand: "echo 'Site estatico, sem build necessario'"
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=604800, immutable
