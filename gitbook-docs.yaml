@@ -7,6 +7,7 @@ site:
       title: Untitled
       path: untitled
       default: true
+      draft: true
       content:
         directory: ./untitled
         language: pt-br
