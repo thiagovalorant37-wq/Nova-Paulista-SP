@@ -1,1 +1,15 @@
 # Table of contents
+
+* [Início](../index.html)
+* [Regras Gerais](../regras-gerais.html)
+* [Regras de Ouro](../regras-de-ouro.html)
+* [Regras do Discord](../regras-discord.html)
+* [Punições & Strikes](../punicoes-strikes.html)
+* [Regras Especiais](../regras-especiais.html)
+* [Regras da Polícia](../regras-policia.html)
+* [Regras do Hospital](../regras-hospital.html)
+* [Regras do Ilegal](../regras-ilegal.html)
+* [Preços do Ilegal](../precos-ilegal.html)
+* [Regras de Ações](../regras-de-acoes.html)
+* [Administração aos Jogadores](../administracao.html)
+* [Doações](../doacoes.html)
